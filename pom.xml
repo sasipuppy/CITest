@@ -34,10 +34,10 @@
 			<scope>test</scope>
 			<exclusions>
 			
-			 <exclusion>
+			 <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-    </exclusion>
+    <dependency>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
