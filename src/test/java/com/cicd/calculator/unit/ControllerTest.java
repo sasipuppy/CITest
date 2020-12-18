@@ -18,8 +18,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 @WebMvcTest(controllers=CalculatorController.class)
 public class ControllerTest {
 	
-	protected static ConfigurableApplicationContext context;
-	
+		
 	@Autowired
 	CalculatorController controller= new  CalculatorController();
 	    
@@ -28,8 +27,7 @@ public class ControllerTest {
 			
 	@Before
 		public void setup() throws Exception{
-		context=SpringApplication.run(CalculatorApplication.class);
-		this.mockMvc=MockMvcBuilders.standaloneSetup(controller).build();
+	        this.mockMvc=MockMvcBuilders.standaloneSetup(controller).build();
 	}
 		
 	@Test
