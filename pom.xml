@@ -34,10 +34,6 @@
 			<scope>test</scope>
 			<exclusions>
 			
-			 <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-    <dependency>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
@@ -51,7 +47,12 @@
         <scope>test</scope>
         <version>5.6.2</version>
     </dependency>
-
+		
+<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    <dependency>
+	    
 	<dependency>
   		<groupId>org.junit.jupiter</groupId>
   		<artifactId>junit-jupiter-engine</artifactId>
