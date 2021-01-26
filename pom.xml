@@ -92,6 +92,23 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+                                    <groupId>org.apache.maven.plugins</groupId>
+                                    <artifactId>maven-pmd-plugin</artifactId>
+                                    <version>3.2</version>
+                                    <configuration>
+                                        <targetJdk>1.8</targetJdk>
+                                        <aggregate>true</aggregate>
+                                        <format>xml</format>
+                                        <rulesets>
+                                            <ruleset>/pmd-rules.xml</ruleset>
+                                        </rulesets>
+                                        <!-- CPD options -->
+                                        <minimumTokens>20</minimumTokens>
+                                        <ignoreIdentifiers>true</ignoreIdentifiers>
+                                    </configuration>
+                                </plugin>
 		</plugins>
 	</build>
 
